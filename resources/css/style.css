@@ -131,45 +131,55 @@ header .mobile {
 }
 
 
-
-
 /* Features Section */
 
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 5% 46px 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
-  background-color: white;
+padding: 2rem;
+margin: 0px 1.25rem;
+background-color: white;
+}
+
+.center {
+    text-align: center;
 }
 
 .feature .image-container {
-  width: 90%;
   height: 65%;
-  margin: 0 auto;
+  width: 90%;
+  margin: auto;
 }
 
-.feature h2 {
-  padding-bottom: .5rem;
-  font-size: 2.25rem;
-  font-weight: bold;
-  color: #4a4a4a;
+.feature .image-container img {
+	display: block;
+	width: 100%;
+	}
+
+.feature .content {
+	padding: 40px 0;
+	line-height: 1.2;
+	color: #4a4a4a;
+	text-align:center;
+	}
+
+.feature .content h2 {
+  padding-bottom: 0.5rem;
+  font-size: 36px;
+  font-face: Roboto-Bold;
+  font-weight:bold;
 }
 
-.feature h3 {
+.feature .content h3 {
   font-size: 1rem;
-  line-height: 1.2;
-  font-weight: 300;
-  color: #4a4a4a;
+  font-face: Roboto-Light;
 }
-
-
 
 
 /* Filters Section */
@@ -188,6 +198,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  opacity: 100%;
 }
 
 #filters-section .content h3 {
@@ -200,8 +211,13 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display:flex;
 }
 
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
 
 /* Quotes Section */
 
@@ -209,20 +225,20 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
-  padding-right: 1.875rem;
-  font-family: "Palatino", serif;
-  font-size: 1.875rem;
+#quotes-section .quote {
+  padding-right: 30px;
+  font-family: Palatino-Italic, serif;
+  font-size: 30px;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
@@ -237,17 +253,11 @@ footer {
 footer .content {
   color: white;
   display: flex;
-  font-size: .75rem;
+  font-size: 12px;
 }
 
 footer .copyright {
   flex-grow: 1;
-}
-
-@media only screen and (min-width: 760px) {
-  footer .content {
-    font-size: .625rem;
-  }
 }
 
 
